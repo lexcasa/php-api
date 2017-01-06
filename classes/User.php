@@ -23,7 +23,7 @@ class User {
 
 	// CRYPTO FUNCTION
 	public function cryptoPsw($psw){
-		$key 	= "gat0.filh0te";
+		$key 	= "y0ur.k3y";
 		$ps 	= strtoupper(sha1($psw.$key));
 		return 	$ps;
 	}
