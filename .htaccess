@@ -1,0 +1,18 @@
+# CHECK YOUR SERVER 
+# THIS CONF. IS FOR LEXART LABS SERVERS 
+# APACHE 2 / UBUNTU SERVER 16.04 
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule . index.php [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Headers: "Content-Type, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since, X-File-Name, Cache-Control, token"
+	Header set Access-Control-Allow-Credentials: "true"
+	Header set Access-Control-Allow-Methods: "OPTIONS, GET, POST"
+</IfModule>
