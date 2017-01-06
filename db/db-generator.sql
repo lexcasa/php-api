@@ -1,6 +1,5 @@
 -- dev. @droman
 -- SINGLE TABLE GENERATOR 
--- SQL SCRYPT
 
 DROP TABLE IF EXISTS usuarios;
 
